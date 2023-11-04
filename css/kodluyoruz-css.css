@@ -1,0 +1,95 @@
+body{
+    background-color: rgb(243, 207, 213);
+    font-family: 'Playpen Sans', cursive;
+    color: rgb(100, 56, 67);
+}
+
+.fs-14 {
+    font-size: 17px;
+}
+
+.fs-20 {
+    font-size: 25px;
+}
+
+.fs-30 {
+    font-size: 30px;
+}
+
+.container {
+    width: 300px;
+    height: 1500px;
+    padding: 15px;
+    margin-right: 30px;
+    background-color: rgb(255, 229, 202);
+    border-radius: 25px;
+    float: left;
+}
+
+.box {
+    width: 500px;
+    margin-right: 30px;
+    padding: 15px;
+    margin-top: 0px;
+    border-radius: 25px;
+    background-color: rgb(255, 229, 202);
+    float:left
+
+}
+
+.kutular {
+    display: flex;
+    flex-wrap: wrap; /* Öğelerin satır sonunda alt satıra geçmesini sağlar */
+    justify-content: space-between; /* Öğeleri yatayda eşit aralıkla dağıtır */
+}
+
+.kutu {
+    width: 200px; /* Belirli bir genişlik ayarlayın */
+    max-height: 150px; /* Maksimum yükseklik ayarlayın */
+    overflow: auto; /* Taşma durumunda kaydırma çubuklarını görüntüler */
+    padding: 10px;
+    background-color: rgb(255, 155, 130);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    flex: 0 0 calc(50% - 10px); /* İlk iki kutunun yarı genişliği, alt alta olanlar ise 100% genişlikte olacak */
+}
+
+.box1 {
+    display: inline-block;
+    width: 550px;
+    font-size: 17px;
+}
+
+.resim img {
+    display: block; /* Resmi blok element yapar */
+}
+
+.metin p {
+    margin: 0;
+}
+
+.box2 {
+    float:left;
+    margin-right: 40px;
+}
+
+.container1 {
+    text-align: center; /* İçerik merkezi hizalanır */
+}
+
+.round-image {
+    display: inline-block;
+    border-radius: 50%; /* Yuvarlak köşeler ekler */
+    overflow: hidden; /* İçeriğin yuvarlağın dışına taşmasını engeller */
+    background-color: #f0f0f0; /* Resim yoksa yuvarlak arka plan rengi */
+    width: 250px;
+    height: 250px;
+    margin-top: 10px; /* İçerik ile başlık arasına boşluk ekler */
+}
+
+.round-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Resmi yuvarlak içeriğe sığdırır */
+}
+
